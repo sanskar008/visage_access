@@ -1,13 +1,15 @@
 name: visage_access
 description: "A new Flutter project."
-publish_to: 'none'
+publish_to: "none"
 version: 0.1.0
 
 environment:
-  sdk: '>=3.3.0-279.3.beta <4.0.0'
+  sdk: ">=3.3.0-279.3.beta <4.0.0"
 
 dependencies:
   flutter:
+    assets:
+      - assets/images/
     sdk: flutter
 
 dev_dependencies:

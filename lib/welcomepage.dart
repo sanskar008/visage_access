@@ -10,12 +10,12 @@ class WelcomePage extends StatefulWidget {
 class _WelcomePageState extends State<WelcomePage> {
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return MaterialApp(
         home: Scaffold(
             body: Center(
       child: Column(
         children: [
-          Text(
+          const Text(
             'Visage Access',
             textDirection: TextDirection.ltr,
             style: TextStyle(
@@ -23,16 +23,17 @@ class _WelcomePageState extends State<WelcomePage> {
               fontWeight: FontWeight.bold,
             ),
           ),
-          SizedBox(
+          const SizedBox(
             height: 20,
           ),
-          Text(
+          const Text(
             "An application for student's gate in and out records",
             textDirection: TextDirection.ltr,
           ),
-          SizedBox(
+          const SizedBox(
             height: 20,
           ),
+          Image.asset('assets/images/welcome.svg'),
         ],
       ),
     )));
