@@ -33,7 +33,6 @@ class _LoginPageState extends State<LoginPage> {
                   "An application for student's gate in and out records",
                   textDirection: TextDirection.ltr,
                 ),
-                
                 const SizedBox(
                   height: 20,
                 ),
@@ -76,6 +75,5 @@ class _LoginPageState extends State<LoginPage> {
         ),
       ),
     );
-    ;
   }
 }
