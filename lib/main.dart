@@ -10,6 +10,13 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      initialRoute: "/",
+      routes: {
+        //"/": (context) => const WelcomePage(),
+        //"/login": (context) => const LoginPage(),
+        //"/signup": (context) => const SignupPage(),
+        //"/home": (context) => const HomePage(),
+      },
       home: Scaffold(
         body: Center(
           child: Padding(
@@ -56,9 +63,13 @@ class MyApp extends StatelessWidget {
                 ),
                 Row(
                   children: [
-                    ElevatedButton(onPressed: () {}, child: Text("Login")),
+                    ElevatedButton(
+                        onPressed: () {
+                          Navigator.pushNamed(context, "/loginpage");
+                        },
+                        child: const Text("Login")),
                     const SizedBox(
-                      width: 20,
+                      width: 15,
                     ),
                     ElevatedButton(onPressed: () {}, child: Text("Signup"))
                   ],
