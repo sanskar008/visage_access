@@ -51,6 +51,18 @@ class MyApp extends StatelessWidget {
                     ],
                   ),
                 ),
+                const SizedBox(
+                  height: 20,
+                ),
+                Row(
+                  children: [
+                    ElevatedButton(onPressed: () {}, child: Text("Login")),
+                    const SizedBox(
+                      width: 20,
+                    ),
+                    ElevatedButton(onPressed: () {}, child: Text("Signup"))
+                  ],
+                ),
               ],
             ),
           ),
