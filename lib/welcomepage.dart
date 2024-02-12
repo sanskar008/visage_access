@@ -24,7 +24,7 @@ class _WelcomePageState extends State<WelcomePage> {
             ),
           ),
           const SizedBox(
-            height: 20,
+            height: 15,
           ),
           const Text(
             "An application for student's gate in and out records",
@@ -35,7 +35,25 @@ class _WelcomePageState extends State<WelcomePage> {
           ),
           Image.asset(
             'assets/images/welcome.png',
-            height: 150,
+            height: 200,
+          ),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              ElevatedButton(
+                  onPressed: () {
+                    Navigator.pushNamed(context, "/login");
+                  },
+                  child: const Text("Login")),
+              const SizedBox(
+                width: 15,
+              ),
+              ElevatedButton(
+                  onPressed: () {
+                    Navigator.pushNamed(context, "/signup");
+                  },
+                  child: const Text("Signup"))
+            ],
           ),
         ],
       ),

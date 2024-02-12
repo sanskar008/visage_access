@@ -27,7 +27,7 @@ class _LoginPageState extends State<LoginPage> {
                   ),
                 ),
                 const SizedBox(
-                  height: 20,
+                  height: 15,
                 ),
                 const Text(
                   "An application for student's gate in and out records",
