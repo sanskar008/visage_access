@@ -8,14 +8,14 @@ environment:
 
 dependencies:
   flutter:
-    assets:
-      - assets/images/
-  sdk: ">=3.16.0 <4.0.0"
-
-dev_dependencies:
-  flutter_test:
     sdk: flutter
   flutter_lints: ^3.0.0
 
 flutter:
   uses-material-design: true
+  assets:
+    - assets/images/
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
