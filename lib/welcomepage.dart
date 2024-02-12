@@ -33,7 +33,10 @@ class _WelcomePageState extends State<WelcomePage> {
           const SizedBox(
             height: 20,
           ),
-          Image.asset('assets/images/welcome.svg'),
+          Image.asset(
+            'assets/images/welcome.png',
+            height: 150,
+          ),
         ],
       ),
     )));
